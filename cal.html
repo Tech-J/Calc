@@ -220,28 +220,26 @@ function average()
 
 			for(i=0;i<avgSum;i++)
 			{
-			if (i==(avgSum-1)) 
-			{
-			sum= sum +	parseInt(b);
-			}
-			else
-			{	
-			c=b.substring(0, b.indexOf(" "));
-			sum= sum +	parseInt(c);
-			b = b.replace( b.substring(0, b.indexOf(" "))," ");
-			b=b.trim();
-			}
+				if (i==(avgSum-1)) 
+					{
+					sum = sum +	Number(b);
+					}
+				else
+					{	
+					c=b.substring(0, b.indexOf(" "));
+					sum= sum +	Number(c);
+					b = b.replace( b.substring(0, b.indexOf(" "))," ");
+					b=b.trim();
+					}
 			}
 			avgSum = (sum/avgSum)
 			document.getElementById("a").value=avgSum;
 			sum=0;
 			avgSum=0;
 		}
-
-
-	else
-	{	
-
+		else
+		{	
+	
 		for(var i=0; i<a.length; i++)
 			{
 			sum= sum + parseInt(a.charAt(i));
@@ -250,11 +248,11 @@ function average()
 			document.getElementById("a").value=sum;
 			sum=0;
 			avg=0;
-	}
-		else
-			{
-			document.getElementById("a").value="Can't Do";
-			}
+		}
+	else
+		{
+		document.getElementById("a").value="Can't Do";
+		}
 }
 </script>
 </body>
