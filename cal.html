@@ -4,7 +4,7 @@
 <style type="text/css">
 	body
 	{
-
+		background-image: url("15Wolverine.jpg");
 
 	}
 	button
@@ -13,6 +13,7 @@
 		width: 100px;
 		color: white;
 		font-size: 30px;
+		font-style: bold;
 	}
 	table
 	{
@@ -53,22 +54,43 @@
 		background-size:cover;	}	
 	#i
 	{
-		background: url("9Jin.jpg");
+		background: url("8spiderman.jpg");
 		background-size:cover;	}	
 	#j
 	{
-		background: url("10CaptAmerica.jpg");
-		background-size:cover;	}	
+		background: url("9Jin.jpg");
+		background-size:cover;	
+	}	
 	#k
 	{
-		background: url("11Venom.jpg");
+		background: url("10CaptAmerica.jpg");
 		background-size:cover;	
 	}
 	#l
 	{
+		background: url("11Venom.jpg");
+		background-size:cover;			
+	}
+	#m
+	{
 		background: url("12 Hulk.jpg");
 		background-size:cover;			
 	}
+	#n
+	{
+		background: url("13Gambit.jpg");
+		background-size:cover;			
+	}	
+	#o
+	{
+		background: url("14WarMachine.jpg");
+		background-size:cover;			
+	}	
+	#p
+	{
+		background: url("15Wolverine.jpg");
+
+	}		
 </style>
 </head>
 <body  text= "gold">
@@ -128,13 +150,13 @@
 	
 	<tr>
 		<td>
-			<button type="button" value="*" onClick="document.calculator.ans.value+='*'">*</button>
+			<button id="n" type="button" value="*" onClick="document.calculator.ans.value+='*'">*</button>
 		</td>
 		<td>
-			<button type="button" value="/" onClick="document.calculator.ans.value+='/'">/</button>
+			<button id="o" type="button" value="/" onClick="document.calculator.ans.value+='/'">/</button>
 		</td>
 		<td>
-			<button type="button" onclick="average()" value="avg" >avg</button>
+			<button id="p" type="button" onclick="average()" value="avg" >avg</button>
 		</td>
 	</tr>
 
