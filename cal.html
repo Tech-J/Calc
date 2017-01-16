@@ -202,22 +202,46 @@
 </table>
 
 </form>
-
-
-
-
-
-
-
 <script type="text/javascript">
 var a;
+var b;
+var c;
 var sum=0;
 var avg=0;
+var avgSum=0;
 function average()
 {
 	a=document.getElementById("a").value;
+	b=document.getElementById("a").value;
 	if(a.length>1)
+		if (a.indexOf(" ")>=0) 
+		{
+			avgSum =(a.split(" ").length+0);
+
+			for(i=0;i<avgSum;i++)
+			{
+			if (i==(avgSum-1)) 
+			{
+			sum= sum +	parseInt(b);
+			}
+			else
+			{	
+			c=b.substring(0, b.indexOf(" "));
+			sum= sum +	parseInt(c);
+			b = b.replace( b.substring(0, b.indexOf(" "))," ");
+			b=b.trim();
+			}
+			}
+			avgSum = (sum/avgSum)
+			document.getElementById("a").value=avgSum;
+			sum=0;
+			avgSum=0;
+		}
+
+
+	else
 	{	
+
 		for(var i=0; i<a.length; i++)
 			{
 			sum= sum + parseInt(a.charAt(i));
