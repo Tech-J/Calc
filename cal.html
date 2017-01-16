@@ -89,8 +89,19 @@
 	#p
 	{
 		background: url("15Wolverine.jpg");
-
+		background-size:cover;
+	}	
+	#q
+	{
+		background: url("pic.jpg");
+		background-size:cover;
+		
 	}		
+	#r
+	{
+		background: url("pic3.jpg");
+		background-size:cover;
+	}			
 </style>
 </head>
 <body  text= "gold">
@@ -162,10 +173,10 @@
 
 	<tr>
 		<td>
-			<button type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">=</button>
+			<button id="q" type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">=</button>
 		</td>
 		<td>
-			<button type="reset" value="Reset">RES</button>
+			<button id="r" type="reset" value="Reset">RES</button>
 		</td>
 	</tr>
 </table>
