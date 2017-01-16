@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>HTML Calculator</title>
+<style type="text/css">
+	body
+	{
+
+
+	}
+	button
+	{
+		height:100px;
+		width: 100px;
+		color: white;
+		font-size: 30px;
+	}
+	table
+	{
+		border-style: solid;
+	}
+	#a
+	{
+		line-height: 50px;
+	}
+	#b	
+	{
+		background: url("1Chun Li.jpg");
+		background-size:cover;
+	}	
+	#c
+	{
+		background: url("2Ryu.jpg");
+		background-size:cover;	}	
+	#d
+	{
+		background: url("3Zangief.jpg");
+		background-size:cover;	}	
+	#e
+	{
+		background: url("4Morgan.jpg");
+		background-size:cover;	}	
+	#f
+	{
+		background: url("5 CaptCommando.jpg");
+		background-size:cover;	}	
+	#g
+	{
+		background: url("6Megaman.jpg");
+		background-size:cover;	}	
+	#h
+	{
+		background: url("7Strider.jpg");
+		background-size:cover;	}	
+	#i
+	{
+		background: url("9Jin.jpg");
+		background-size:cover;	}	
+	#j
+	{
+		background: url("10CaptAmerica.jpg");
+		background-size:cover;	}	
+	#k
+	{
+		background: url("11Venom.jpg");
+		background-size:cover;	
+	}
+	#l
+	{
+		background: url("12 Hulk.jpg");
+		background-size:cover;			
+	}
+</style>
+</head>
+<body  text= "gold">
+
+
+<form name="calculator" >
+<table colspan="3">
+	<tr>
+		<td colspan="3">
+		<input id="a"  size="50" type="text" name="ans" value=""></td>
+	</tr>
+	<tr>
+		<td>
+			<button id="b" type="button" value="1" onClick="document.calculator.ans.value+='1'">1</button>
+		</td>
+		<td>
+			
+			<button id="c" type="button" value="2" onClick="document.calculator.ans.value+='2'">2</button>
+		</td>
+		<td>
+			<button id="d" type="button" value="3" onClick="document.calculator.ans.value+='3'">3</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<button id="e" type="button" value="4" onClick="document.calculator.ans.value+='4'">4</button>
+		</td>
+		<td>
+			<button id="f" type="button" value="5" onClick="document.calculator.ans.value+='5'">5</button>
+		</td>
+		<td>
+			<button id="g" type="button" value="6" onClick="document.calculator.ans.value+='6'">6</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<button id="h" type="button" value="7" onClick="document.calculator.ans.value+='7'">7</button>
+		</td>
+		<td>
+			<button id="i" type="button" value="8" onClick="document.calculator.ans.value+='8'">8</button>
+		</td>
+		<td>
+			<button id="j" type="button" value="9" onClick="document.calculator.ans.value+='9'">9</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<button id="k" type="button" value="0" onClick="document.calculator.ans.value+='0'">0</button>
+		</td>
+		<td>
+			<button id="l" type="button" value="+" onClick="document.calculator.ans.value+='+'">+</button>
+		</td>
+		<td>
+			<button id="m" type="button" value="-" onClick="document.calculator.ans.value+='-'">-</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<button type="button" value="*" onClick="document.calculator.ans.value+='*'">*</button>
+		</td>
+		<td>
+			<button type="button" value="/" onClick="document.calculator.ans.value+='/'">/</button>
+		</td>
+		<td>
+			<button type="button" onclick="average()" value="avg" >avg</button>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<button type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">=</button>
+		</td>
+		<td>
+			<button type="reset" value="Reset">Reset</button>
+		</td>
+	</tr>
+</table>
+
+</form>
+
+
+
+
+
+
+
+<script type="text/javascript">
+var a;
+var sum=0;
+var avg=0;
+function average()
+{
+	a=document.getElementById("a").value;
+	if(a.length>1)
+	{	
+		for(var i=0; i<a.length; i++)
+			{
+			sum= sum + parseInt(a.charAt(i));
+			}
+			sum=(sum/a.length);
+			document.getElementById("a").value=sum;
+			sum=0;
+			avg=0;
+	}
+		else
+			{
+			document.getElementById("a").value="Can't Do";
+			}
+}
+</script>
+</body>
+</html>
