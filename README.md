@@ -1,7 +1,7 @@
 Calculator
 
 Description
-This project is a HTML calculator. 
+<p>This project is a HTML calculator.</p> 
 
 Technologies Used
 
