@@ -4,6 +4,7 @@ Description
 This project is a HTML calculator. 
 
 Technologies Used
-HTML
-CSS
-Javascript
+
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
